@@ -445,7 +445,7 @@ APP = {
 
                 // Run the test
                 $.ajax({
-                    url         : test.attr('action'),
+                    url         : test.attr('action') + '?env=' + $('select[name="env"]').val(),
                     method      : 'GET',
                     cache       : false,
                     dataType    : "json",

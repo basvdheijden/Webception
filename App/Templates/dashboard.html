@@ -32,6 +32,15 @@
         <!-- / tests container -->
         <div id='tests_container' class='hide_on_error'>
 
+
+            <label for="env"><h4><strong>Environment</strong></h4></label>
+
+            <select id="env" name="env">
+                <option value="test">Test</option>
+                <option value="acc">Accept</option>
+                <option value="prod">Production</option>
+            </select>
+
             {% for type, files in tests %}
 
             <div class='tests_group'>
